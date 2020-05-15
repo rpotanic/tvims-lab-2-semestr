@@ -1,0 +1,14 @@
+D:\Labs\tvims\tvims\bin\Debug\tvims.exe.config
+D:\Labs\tvims\tvims\bin\Debug\tvims.exe
+D:\Labs\tvims\tvims\bin\Debug\tvims.pdb
+D:\Labs\tvims\tvims\obj\Debug\tvims.csprojAssemblyReference.cache
+D:\Labs\tvims\tvims\obj\Debug\tvims.Form1.resources
+D:\Labs\tvims\tvims\obj\Debug\tvims.Properties.Resources.resources
+D:\Labs\tvims\tvims\obj\Debug\tvims.csproj.GenerateResource.cache
+D:\Labs\tvims\tvims\obj\Debug\tvims.csproj.CoreCompileInputs.cache
+D:\Labs\tvims\tvims\obj\Debug\tvims.exe
+D:\Labs\tvims\tvims\obj\Debug\tvims.pdb
+D:\Labs\tvims\tvims\bin\Debug\MaterialSkin.dll
+D:\Labs\tvims\tvims\obj\Debug\tvims.csproj.CopyComplete
+D:\Labs\tvims\tvims\bin\Debug\ZedGraph.dll
+D:\Labs\tvims\tvims\obj\Debug\tvims.GrapNChar.resources
