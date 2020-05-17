@@ -1,12 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using MaterialSkin.Controls;
 using MaterialSkin;
 
@@ -141,6 +134,12 @@ namespace tvims
             GrapNChar form2 = new GrapNChar(eta, SeriesDist, countExp);
             form2.Draw();
             form2.Show();
+        }
+
+        private void materialFlatButton3_Click(object sender, EventArgs e)
+        {
+            CheckHipoteses form3 = new CheckHipoteses(countExp, SeriesDist, eta);
+            form3.Show();
         }
     }
 }
