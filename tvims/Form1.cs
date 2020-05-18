@@ -131,7 +131,7 @@ namespace tvims
 
         private void materialFlatButton2_Click(object sender, EventArgs e)
         {
-            GrapNChar form2 = new GrapNChar(eta, SeriesDist, countExp);
+            GrapNChar form2 = new GrapNChar(eta, SeriesDist, countExp, lyambda);
             form2.Draw();
             form2.Show();
         }

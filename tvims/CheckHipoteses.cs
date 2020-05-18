@@ -30,8 +30,13 @@ namespace tvims
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
-           
-            k = int.Parse(materialSingleLineTextField1.Text);
+            if (materialSingleLineTextField1.Text == "")
+            {
+                k = 0;
+            }
+            else {
+                k = int.Parse(materialSingleLineTextField1.Text);
+            }
             dataGridView1.RowCount = k;
             dataGridView1.ColumnCount = 3;
             for (int i = 0; i < k; i++)

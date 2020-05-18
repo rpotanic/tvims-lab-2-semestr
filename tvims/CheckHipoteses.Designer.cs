@@ -60,7 +60,7 @@
             this.materialSingleLineTextField1.SelectionStart = 0;
             this.materialSingleLineTextField1.Size = new System.Drawing.Size(785, 23);
             this.materialSingleLineTextField1.TabIndex = 16;
-            this.materialSingleLineTextField1.Text = "1";
+            this.materialSingleLineTextField1.Text = "";
             this.materialSingleLineTextField1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             this.materialSingleLineTextField1.UseSystemPasswordChar = false;
             this.materialSingleLineTextField1.Click += new System.EventHandler(this.TextBox1_TextChanged);

@@ -219,7 +219,7 @@
             this.materialFlatButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton3.Depth = 0;
             this.materialFlatButton3.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.materialFlatButton3.Location = new System.Drawing.Point(473, 578);
+            this.materialFlatButton3.Location = new System.Drawing.Point(470, 582);
             this.materialFlatButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton3.Name = "materialFlatButton3";

@@ -13,11 +13,13 @@ namespace tvims
         List<Form1.Random_Var> SampleSeries;//выборочный ряд распределения
         double n;//число проведенных эксперементов 
         LineItem myCurve1;//графики
+        double lyambda; // интенсивность
         LineItem myCurve2;//графики
-        public GrapNChar(List<Form1.Random_Var> eta, List<Form1.Random_Var> _SeriesDist, double _n)
+        public GrapNChar(List<Form1.Random_Var> eta, List<Form1.Random_Var> _SeriesDist, double _n, double _lyambda)
         {
             SeriesDist = new List<Form1.Random_Var>(_SeriesDist);
             SampleSeries = new List<Form1.Random_Var>(eta);
+            lyambda = _lyambda;
             n = _n;
             for (int i = 0; i < SampleSeries.Count; i++)//с помощью цикла превращаем список случайных величин в ряд распределения случайно величины 
             {
@@ -63,7 +65,9 @@ namespace tvims
         {
             double result = 0;
             for (int i = 0; i < SeriesDist.Count; i++)
+            {
                 result += SeriesDist[i].count * SeriesDist[i].value;
+            }
             return result;
         }
         private double SampleMean()//выборочное среднее
@@ -131,14 +135,14 @@ namespace tvims
         private void FillTable1()
         {
             dataGridView1.RowHeadersVisible = false;
-            dataGridView1.Rows[0].Cells[0].Value = MathExpaction();
-            dataGridView1.Rows[0].Cells[1].Value = SampleMean();
-            dataGridView1.Rows[0].Cells[2].Value = Math.Abs(MathExpaction() - SampleMean());
-            dataGridView1.Rows[0].Cells[3].Value = Variance();
-            dataGridView1.Rows[0].Cells[4].Value = SampleVarianse();
-            dataGridView1.Rows[0].Cells[5].Value = Math.Abs(SampleVarianse() - Variance());
-            dataGridView1.Rows[0].Cells[6].Value = Mediana();
-            dataGridView1.Rows[0].Cells[7].Value = ScopeSample();
+            dataGridView1.Rows[0].Cells[0].Value = lyambda;  // мат. ожидание
+            dataGridView1.Rows[0].Cells[1].Value = SampleMean(); // выборочное среднее
+            dataGridView1.Rows[0].Cells[2].Value = Math.Abs(lyambda - SampleMean()); 
+            dataGridView1.Rows[0].Cells[3].Value = lyambda; // Дисперсия
+            dataGridView1.Rows[0].Cells[4].Value = SampleVarianse(); //Выборочная дисперсия
+            dataGridView1.Rows[0].Cells[5].Value = Math.Abs(SampleVarianse() - lyambda);
+            dataGridView1.Rows[0].Cells[6].Value = Mediana(); // медиана
+            dataGridView1.Rows[0].Cells[7].Value = ScopeSample(); // размах выборки
         }
         private void FillTable2()
         {
